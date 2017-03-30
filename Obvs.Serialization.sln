@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obvs.Serialization.Json", "Obvs.Serialization.Json\Obvs.Serialization.Json.csproj", "{21A3DEDF-3CDE-4C64-87A2-3405E1F1DD77}"
 EndProject
@@ -16,6 +16,18 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obvs.Serialization.MessagePack", "Obvs.Serialization.MessagePack\Obvs.Serialization.MessagePack.csproj", "{4E1D1BEA-02E3-4BC5-96AD-799D27ACA32C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obvs.Serialization.NetJson", "Obvs.Serialization.NetJson\Obvs.Serialization.NetJson.csproj", "{A7032830-495A-4B81-AE4E-A883125CF7A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET Standard", "NET Standard", "{D95B9EC3-BDC5-4D3D-BDB3-D4B3611F8AF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obvs.Serialization.Standard.Xml", "Obvs.Serialization.Standard.Xml\Obvs.Serialization.Standard.Xml.csproj", "{85F8B394-1FF9-4E02-B1E6-50459C47DB71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obvs.Serialization.Standard.ProtoBuf", "Obvs.Serialization.Standard.ProtoBuf\Obvs.Serialization.Standard.ProtoBuf.csproj", "{7939CAA9-7566-4C37-9334-5191B30BC16A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obvs.Serialization.Standard.NetJson", "Obvs.Serialization.Standard.NetJson\Obvs.Serialization.Standard.NetJson.csproj", "{CD3FBC58-AF87-4973-8788-73398AB8DB6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obvs.Serialization.Standard.MessagePack", "Obvs.Serialization.Standard.MessagePack\Obvs.Serialization.Standard.MessagePack.csproj", "{10D1CEEF-93F4-49D5-9CBE-76D45CA6AAEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obvs.Serialization.Standard.Json", "Obvs.Serialization.Standard.Json\Obvs.Serialization.Standard.Json.csproj", "{5CD74499-0E87-43FB-993B-B4796FE00AA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,11 +59,36 @@ Global
 		{A7032830-495A-4B81-AE4E-A883125CF7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7032830-495A-4B81-AE4E-A883125CF7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7032830-495A-4B81-AE4E-A883125CF7A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85F8B394-1FF9-4E02-B1E6-50459C47DB71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F8B394-1FF9-4E02-B1E6-50459C47DB71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F8B394-1FF9-4E02-B1E6-50459C47DB71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F8B394-1FF9-4E02-B1E6-50459C47DB71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7939CAA9-7566-4C37-9334-5191B30BC16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7939CAA9-7566-4C37-9334-5191B30BC16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7939CAA9-7566-4C37-9334-5191B30BC16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7939CAA9-7566-4C37-9334-5191B30BC16A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD3FBC58-AF87-4973-8788-73398AB8DB6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD3FBC58-AF87-4973-8788-73398AB8DB6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD3FBC58-AF87-4973-8788-73398AB8DB6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD3FBC58-AF87-4973-8788-73398AB8DB6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10D1CEEF-93F4-49D5-9CBE-76D45CA6AAEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10D1CEEF-93F4-49D5-9CBE-76D45CA6AAEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10D1CEEF-93F4-49D5-9CBE-76D45CA6AAEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10D1CEEF-93F4-49D5-9CBE-76D45CA6AAEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CD74499-0E87-43FB-993B-B4796FE00AA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD74499-0E87-43FB-993B-B4796FE00AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD74499-0E87-43FB-993B-B4796FE00AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD74499-0E87-43FB-993B-B4796FE00AA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6FF57DDD-05DC-4FDC-9393-DB71C67D31A1} = {6C4475B7-D8EE-4769-A05F-84DCFA1A0340}
+		{85F8B394-1FF9-4E02-B1E6-50459C47DB71} = {D95B9EC3-BDC5-4D3D-BDB3-D4B3611F8AF2}
+		{7939CAA9-7566-4C37-9334-5191B30BC16A} = {D95B9EC3-BDC5-4D3D-BDB3-D4B3611F8AF2}
+		{CD3FBC58-AF87-4973-8788-73398AB8DB6B} = {D95B9EC3-BDC5-4D3D-BDB3-D4B3611F8AF2}
+		{10D1CEEF-93F4-49D5-9CBE-76D45CA6AAEC} = {D95B9EC3-BDC5-4D3D-BDB3-D4B3611F8AF2}
+		{5CD74499-0E87-43FB-993B-B4796FE00AA0} = {D95B9EC3-BDC5-4D3D-BDB3-D4B3611F8AF2}
 	EndGlobalSection
 EndGlobal
